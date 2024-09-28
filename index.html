@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container container__header">
-            <div class="logo"></div>
-                <button class="btn btn__add">
-                    Добавить товар
-                </button>
-                <div>
-                    Фильтрация товаров
-                </div>
-        </div>
+      <div class="container container__header">
+        <div class="logo"></div>
+        <button class="btn btn__add">Добавить товар</button>
+        <div>Фильтрация товаров</div>
+      </div>
     </header>
     <main>
-        <div class="container">
-            <section class="store">
-                <article class="product">
-                    <img class="product__img" src="" alt="Картинка товара">
-                    <h2 class="product__title">Название</h2>
-                    <span class="product__price">Цена &#8381;</span>
-                    <span class="product__category">Категория</span>
-                    <p class="product__description">Описание</p>
-                    <button class="btn btn__delete">Удалить товар</button>
-                </article>
-            </section>
-        </div>
+      <div class="container container__main">
+        <h1 class="title">Все товары</h1>
+        <form class="form">
+          <h2>Добавить товар</h2>
+          <input type="text" id="pTitle" placeholder="Название" />
+          <input type="number" id="pPrice" placeholder="Цена" />
+          <textarea id="pDesc" placeholder="Описание"></textarea>
+          <select id="pCategory" name="select">
+          </select>
+          <button class="btn btn__submit">Добавить</button>
+          <div class="btn btn__close">Закрыть</div>
+        </form>
+        <section class="store">
+        </section>
+        <button class="btn btn__load">Загрузить еще</button>
+      </div>
     </main>
     <footer>
-        <div class="container container__footer">
-            <p>&copy; By Alexey Soldatov</p>
-        </div>
+      <div class="container container__footer">
+        <p>&copy; By Alexey Soldatov</p>
+      </div>
     </footer>
-</body>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
