@@ -11,7 +11,9 @@
       <div class="container container__header">
         <div class="logo"></div>
         <button class="btn btn__add">Добавить товар</button>
-        <div>Фильтрация товаров</div>
+        <select id="fCategory">
+          <option value="all products">Все товары</option>
+        </select>
       </div>
     </header>
     <main>
@@ -22,11 +24,12 @@
           <input type="text" id="pTitle" placeholder="Название" />
           <input type="number" id="pPrice" placeholder="Цена" />
           <textarea id="pDesc" placeholder="Описание"></textarea>
-          <select id="pCategory" name="select">
+          <select id="pCategory">
           </select>
           <button class="btn btn__submit">Добавить</button>
           <div class="btn btn__close">Закрыть</div>
         </form>
+        <div class="message"></div>
         <section class="store">
         </section>
         <button class="btn btn__load">Загрузить еще</button>

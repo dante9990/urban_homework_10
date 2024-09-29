@@ -1,6 +1,5 @@
-export function displayCategories(list) {
-    const categoriesList = document.getElementById('pCategory');
-    categoriesList.innerHTML = '';
+export function displayCategories(list, id) {
+    const categoriesList = document.getElementById(id);
     list.forEach(category => {
         const categoryElem = document.createElement('option');
         categoryElem.value = category

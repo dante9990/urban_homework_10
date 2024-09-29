@@ -1,3 +1,5 @@
+import { deleteProduct } from "../index.js";
+
 export function displayProducts(list) {
     const productsList = document.querySelector('.store');
     productsList.innerHTML = '';
@@ -13,5 +15,8 @@ export function displayProducts(list) {
                     <button class="btn btn__delete">Удалить товар</button>
         `;
         productsList.appendChild(productElem);
+
+        const deleteBtn = productElem.querySelector('.btn__delete')
+        deleteBtn.addEventListener('click', ()=>deleteProduct(product.id))
     })
 }
